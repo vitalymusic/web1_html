@@ -52,6 +52,14 @@ img{
 }
 
 
+
+/* saites */
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
 nav{
     height: 50px;
     background-color: #000000;
@@ -98,3 +106,76 @@ footer{
     border-radius: 10px;
     height: 100%;
 }
+
+
+.left_footer dt{
+    font-weight: 900;
+    margin: 10px 0px;
+
+}
+
+.left_footer dd{
+    font-weight: 100;
+}
+
+footer form{
+    width:50%;   
+}
+
+footer form label{
+    display: block;
+    margin-top: 10px;
+}
+footer form input, footer form textarea{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #d5d5d5;
+    
+}
+
+footer form input:focus-visible, footer form textarea:focus-visible{
+    background-color: #ffffff;
+    transition: .5s linear;
+}
+
+footer form textarea{
+    height:200px;
+    resize: none;
+}
+
+footer form button{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #d5d5d5;
+    outline: 2px solid red;
+    border:none;
+    cursor: pointer;
+    font-weight: 700;
+}
+footer form button:hover{
+    background-color: #ffffff;
+    transition: .5s linear;   
+}
+
+
+
+.table{
+    border:1px solid black;
+    margin:20px auto;
+    border-collapse: collapse;
+}
+
+.table tr,.table td{
+    border:1px solid black;
+    padding: 5px;
+}
+
+.table tr:nth-child(2n){
+    background-color: #00000037;
+}
+
