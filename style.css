@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 :root{
     font-size: 14pt;
     font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 
     --gradient1:linear-gradient(#057ee1,#035597);
-    --fona_attels:url("https://4kwallpapers.com/images/wallpapers/network-connections-earth-lights-blue-horizon-2560x1080-2463.jpg");
+    --fona_attels:url("img/network-connections-earth-lights-blue-horizon-2560x1080-2463.jpg");
     --white_background:#ffffffcc;
     --gaiss_teksts:white;
     --tumss_teksts:rgb(0, 0, 0);
@@ -26,6 +31,7 @@ h1,h2,h3{
 
 h1{
     font-size: 3rem;
+    font-family: "Akaya Kanadaka", system-ui;
 }
 h2{
     font-size: 2rem;
