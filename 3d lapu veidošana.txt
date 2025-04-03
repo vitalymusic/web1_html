@@ -1,0 +1,12 @@
+1. Spline
+
+https://app.spline.design/tutorials
+
+1. Izveidot modeli vai izvēlēties no bibliotēkas. 
+2. Eksportēt kodu un importēt spline.js un visu pārējo kodu savā lapā. 
+
+1. Pamācība
+https://www.youtube.com/watch?v=qMURnaDpjig
+2. Pamācība
+https://www.youtube.com/watch?v=ixSDNrOM3-I
+
