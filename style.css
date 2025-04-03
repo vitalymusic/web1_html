@@ -67,6 +67,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap:20px;
+    margin-bottom: 20px;
 }
 
 nav a{
@@ -162,8 +163,6 @@ footer form button:hover{
     transition: .5s linear;   
 }
 
-
-
 .table{
     border:1px solid black;
     margin:20px auto;
@@ -179,3 +178,7 @@ footer form button:hover{
     background-color: #00000037;
 }
 
+
+.chatWindow{
+    
+}
