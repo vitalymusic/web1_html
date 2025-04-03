@@ -6,19 +6,22 @@
     --gradient1:linear-gradient(#057ee1,#035597);
     --fona_attels:url("https://4kwallpapers.com/images/wallpapers/network-connections-earth-lights-blue-horizon-2560x1080-2463.jpg");
     --white_background:#ffffffcc;
-
+    --gaiss_teksts:white;
+    --tumss_teksts:rgb(0, 0, 0);
 
 }
 body{
   margin: 0px;
   padding: 0px;  
   background-image: var(--gradient1);
+  background-image: var(--fona_attels);
 }
 
 
 h1,h2,h3{
     text-align: center;
     margin:0px;
+    color:var(--gaiss_teksts);
 }
 
 h1{
@@ -174,6 +177,7 @@ footer form button:hover{
     border:1px solid black;
     margin:20px auto;
     border-collapse: collapse;
+    background-color: var(--white_background);
 }
 
 .table tr,.table td{
