@@ -1,0 +1,41 @@
+<script>
+//     Izveidot nelielu programmu, kurā ir:
+// Izmantoti vismaz 2 datu tipi mainīgajiem;
+// Lietotājs ievada vismaz 2 mainīgos;
+// Ir jābūt pārbaudei (IF);
+// Veikti nelieli aprēķini;
+// Izdrukā iegūto rezultātu
+
+
+let productName;
+let productCount;
+let productPrice;
+let summa = 0;
+
+let produktuGrozs = [];
+
+productCount = +prompt("Ievadiet produktu daudzumu");
+
+if(productCount=="" || productCount<1){
+    alert("Produktu skaits nevar būt nulle!"); 
+}
+else{
+    for(let i=1;i<=productCount;i++){
+    produktuGrozs.push({
+        nosaukums:prompt("Ievadiet "+i+".produkta nosaukumu"),
+        cena:+prompt("Ievadiet "+i+".produkta cenu"),
+    })
+
+    
+}
+
+for(produkts of produktuGrozs){
+    summa += produkts.cena;
+    document.write(`<p>${produkts.nosaukums}:${produkts.cena} &euro;</p>`);
+}
+document.write(`Summa par visiem produktiem: ${summa} &euro;`);
+}
+
+
+
+</script>
