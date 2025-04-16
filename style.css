@@ -345,3 +345,16 @@ h1{
     background-color: rgb(228, 226, 226);
     transition: .3s;
 }
+
+
+#main section{
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.activeSec{
+    height: 400px !important;
+    transition: 1s ease-in-out;
+}

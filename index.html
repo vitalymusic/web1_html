@@ -12,7 +12,7 @@
     <title>Hello world!</title>
 </head>
 
-<body>
+<body id="main">
     <nav>
         <a href="index.html" class="active">Galvenā</a>
         <a href="html.html">HTML</a>
@@ -22,15 +22,15 @@
 
     <main>
         <h1 class="slow-fly-in">Esi sveicināts!!!</h1>
-        <button class="showContentBtn">Parādīt saturu par HTML</button>
-        <section id="html">
+        <button class="showContentBtn" data-id="html">Parādīt saturu par HTML</button>
+        <section id="html"> 
             <h3>Kas ir HTML?</h3>
             <p class="animate1">HTML (Hypertext Markup Language) ir marķēšanas valoda, kas tiek izmantota tīmekļa lapu struktūras
                 izveidei. Tā izmanto elementus un tagus, lai aprakstītu dažādas satura daļas, piemēram, virsrakstus,
                 rindkopas, attēlus un saites.</p>
             <img src="https://placehold.co/600x400?text=HTML" alt="HTML attēls">
         </section>
-        <button class="showContentBtn">Parādīt saturu par CSS</button>
+        <button class="showContentBtn" data-id="css">Parādīt saturu par CSS</button>
         <section id="css">
             <h3>Kas ir CSS?</h3>
             <p class="animate2">CSS (Cascading Style Sheets) ir stilu lapa, kas tiek izmantota, lai noformētu HTML dokumentus. Tā nosaka
@@ -38,7 +38,7 @@
                 pielāgotas lietotāja vajadzībām.</p>
             <img src="https://placehold.co/600x400?text=CSS" alt="CSS attēls">
         </section>
-        <button class="showContentBtn">Parādīt saturu par Javascript</button>
+        <button class="showContentBtn" data-id="javascript">Parādīt saturu par Javascript</button>
         <section id="javascript">
             <h3>Kas ir JavaScript?</h3>
             <p class="animate3">JavaScript ir programmēšanas valoda, kas tiek izmantota tīmekļa vietņu interaktivitātes pievienošanai. Tā
