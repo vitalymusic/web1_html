@@ -14,6 +14,7 @@
 
 <body id="main">
     <nav>
+        <a href="#" class="contactBtn">Sazināties ar mums</a>
         <a href="index.html" class="active">Galvenā</a>
         <a href="html.html">HTML</a>
         <a href="css.html">CSS</a>
@@ -101,6 +102,31 @@
 
 
     <!-- Chat window -->
+
+
+    <!-- Form dialog -->
+
+    <dialog id="contactFormDialog">
+        <a href="#" class="dialogCloseBtn"><i class="fa-solid fa-xmark"></i></a>
+        <form action="">
+            <h3>Sazināties ar mums</h3>
+        <div class="form-element">
+            <label for="vards">Jūsu vārds:</label>
+            <input type="text" name="vards" id="vards">
+        </div>
+        <div class="form-element">
+            <label for="email">Jūsu epasts:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form-element">
+            <label for="message">Jūsu ziņa:</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <button type="submit">Nosūtīt</button>
+    </form>
+    </dialog>
+
+    <!-- Form dialog -->
 
 
 
