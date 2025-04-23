@@ -26,5 +26,56 @@ const datorkursi = [
     }
   ];
   
-  console.log(datorkursi);
-  
+
+let slideNumber = 0;
+let slidesDiv = document.querySelector('.slides');
+let leftbtn = document.querySelector('.slider_left_btn');
+let rightbtn = document.querySelector('.slider_right_btn');
+
+
+
+function showSlide(number){
+    slidesDiv.innerHTML = `
+         <div class="slide">
+            <img src="${datorkursi[number].attels}" alt="">
+            <h3>${datorkursi[number].nosaukums}</h3>
+            <p>${datorkursi[number].apraksts}</p>
+            <button>Pieteikties</button>
+        </div> `;
+
+}
+showSlide(slideNumber);
+
+
+
+leftbtn.onclick = (event)=>{
+    event.preventDefault();
+    
+    slideNumber--;
+
+    if(slideNumber < 0){
+        slideNumber = datorkursi.length -1;
+    }
+    showSlide(slideNumber);
+    
+}
+
+rightbtn.onclick = (event)=>{
+    event.preventDefault();
+    slideNumber++;
+    if(slideNumber > datorkursi.length -1){
+        slideNumber=0;
+    }
+
+    showSlide(slideNumber);
+    console.log(slideNumber);
+}
+
+
+setInterval(()=>{
+    rightbtn.click();
+},2000);
+
+
+
+
