@@ -408,7 +408,7 @@ dialog h3{
     color:red;
     font-size: 2.5rem;
     transform: translate(0px,0px);
-    transition: .5s;
+    transition: .3s;
 }
 
 .chatIcon:hover{
@@ -417,7 +417,7 @@ dialog h3{
 }
 
 .chatIcon__hidden{
-    /* position: fixed; */
+
     transform: translate(300px,0px);
     transition: .5s;
 }
