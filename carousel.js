@@ -44,8 +44,9 @@ function showSlide(number){
         </div> `;
 
 }
-showSlide(slideNumber);
 
+
+showSlide(slideNumber);
 
 
 leftbtn.onclick = (event)=>{
@@ -70,7 +71,6 @@ rightbtn.onclick = (event)=>{
     showSlide(slideNumber);
     console.log(slideNumber);
 }
-
 
 setInterval(()=>{
     rightbtn.click();
