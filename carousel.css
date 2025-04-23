@@ -1,0 +1,66 @@
+/* Nested css Style */
+
+.carousel{
+    & .slides{
+
+        /* outline:2px solid red; */
+        width: 75%;
+        margin: auto;
+
+        & .slide{
+            position: relative;
+
+            & img{
+                width: 100%;
+            }
+
+            & h3{
+               position: absolute;
+               top:50px;
+               width: 100%;
+               font-size: 2rem;     
+            }
+
+            & p{
+               position: absolute;
+               text-align: justify;
+               top:100px;
+               left: 50%;
+               transform: translate(-50%,0px);
+               max-width: 100%;
+               width: 75%;
+               box-sizing: border-box;
+               font-size: 1rem; 
+               border:none;    
+            }
+            & button{
+                padding: 10px;
+                position: absolute;
+                bottom:10px;
+                left: 50%;
+               transform: translate(-50%,0px);
+               font-size: 1.5rem;
+               cursor: pointer;
+            }
+        }
+
+      
+         
+    }
+
+
+    & .buttons{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+
+       & a{
+            display: block;
+            padding: 5px;
+            font-size: 2rem;
+            color:red;
+       }
+    }
+
+
+}
