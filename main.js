@@ -53,8 +53,15 @@ let closeChatBtn = document.querySelector('.chatWindow .closeButton');
 
 chatButton.onclick = (e)=>{
     e.preventDefault();
-    e.target.classList.add('chatIcon__hidden');
+    chatButton.classList.add('chatIcon__hidden');
     chatWindow.classList.add('chatWindow__show');
+}
+
+
+closeChatBtn.onclick = (e)=>{
+    e.preventDefault();
+    chatButton.classList.remove('chatIcon__hidden');
+    chatWindow.classList.remove('chatWindow__show');
 }
 
 
