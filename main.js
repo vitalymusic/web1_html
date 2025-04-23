@@ -44,3 +44,22 @@ dialogCloseBtn.onclick = ()=>{
 
 
 
+let chatButton = document.querySelector('.chatIcon');
+let chatWindow = document.querySelector('.chatWindow');
+let closeChatBtn = document.querySelector('.chatWindow .closeButton');
+
+
+
+
+chatButton.onclick = (e)=>{
+    e.preventDefault();
+    e.target.classList.add('chatIcon__hidden');
+    chatWindow.classList.add('chatWindow__show');
+}
+
+
+
+
+
+
+
