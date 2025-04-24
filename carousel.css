@@ -79,7 +79,7 @@
 
 
 
-.fade-in{-webkit-animation:fade-in 1.2s cubic-bezier(.23,1.000,.32,1.000) both;animation:fade-in 1.2s cubic-bezier(.23,1.000,.32,1.000) both}
+.fade-in{-webkit-animation:fade-in .7s cubic-bezier(.23,1.000,.32,1.000) both;animation:fade-in .7s cubic-bezier(.23,1.000,.32,1.000) both}
 
 
 .fade-out{-webkit-animation:fade-out .7s ease-out both;animation:fade-out .7s ease-out both}
