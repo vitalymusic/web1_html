@@ -40,7 +40,7 @@ let slideNumber = 0;
 let slidesDiv = document.querySelector('.slides');
 let leftbtn = document.querySelector('.slider_left_btn');
 let rightbtn = document.querySelector('.slider_right_btn');
-let time = 800;
+let time = 400;
 
 
 function showSlide(number){
@@ -59,13 +59,17 @@ showSlide(slideNumber);
 
 leftbtn.onclick = (event)=>{
     event.preventDefault();
+    slidesDiv.classList.remove('fade-in');
+    slidesDiv.classList.add('fade-out');
     
-    slideNumber--;
-
-    if(slideNumber < 0){
-        slideNumber = datorkursi.length -1;
-    }
-    showSlide(slideNumber);
+    setTimeout(()=>{
+      slideNumber--;
+      if(slideNumber < 0){
+          slideNumber = datorkursi.length -1;
+      }
+      showSlide(slideNumber);
+      slidesDiv.classList.replace('fade-out','fade-in');
+  },time);
     
 }
 
@@ -80,13 +84,9 @@ rightbtn.onclick = (event)=>{
         slideNumber=0;
     }
     showSlide(slideNumber);
-  },time);
-
-  setTimeout(()=>{
     slidesDiv.classList.replace('fade-out','fade-in');
-  },time);
+  },time)
 
-    console.log(slideNumber);
 }
 
 // setInterval(()=>{

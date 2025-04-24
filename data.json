@@ -1,0 +1,214 @@
+{
+    "tags": [
+      {
+        "tag": "a",
+        "description": "Hipersaite uz citu resursu vai lapu.",
+        "attributes": {
+          "href": "Hipersaistes URL",
+          "target": "Nosaka, kur atvērt saiti (piemēram, _blank)",
+          "rel": "Apraksta saistību ar dokumentu",
+          "download": "Norāda, ka saite lejupielādē failu"
+        }
+      },
+      {
+        "tag": "abbr",
+        "description": "Saīsinājums vai akronīms ar paskaidrojumu.",
+        "attributes": {
+          "title": "Paskaidrojums vai pilns saīsinājuma nosaukums"
+        }
+      },
+      {
+        "tag": "address",
+        "description": "Kontaktinformācija par autoru vai īpašnieku.",
+        "attributes": {}
+      },
+      {
+        "tag": "area",
+        "description": "Definē aktīvu apgabalu attēlu kartē.",
+        "attributes": {
+          "alt": "Alternatīvais teksts",
+          "coords": "Koordinātas",
+          "href": "Hipersaite",
+          "shape": "Formas veids (rect, circle, poly)"
+        }
+      },
+      {
+        "tag": "article",
+        "description": "Neatkarīgs, pilnvērtīgs saturs (piemēram, raksts).",
+        "attributes": {}
+      },
+      {
+        "tag": "aside",
+        "description": "Sānu saturs vai papildus informācija.",
+        "attributes": {}
+      },
+      {
+        "tag": "audio",
+        "description": "Audio atskaņošanai.",
+        "attributes": {
+          "src": "Ceļš uz audio failu",
+          "controls": "Parāda atskaņošanas vadību",
+          "autoplay": "Automātiska atskaņošana",
+          "loop": "Atkārtota atskaņošana"
+        }
+      },
+      {
+        "tag": "b",
+        "description": "Bold (izcelts) teksts bez nozīmes uzsvara.",
+        "attributes": {}
+      },
+      {
+        "tag": "base",
+        "description": "Definē noklusēto URL bāzi dokumentā.",
+        "attributes": {
+          "href": "Bāzes URL"
+        }
+      },
+      {
+        "tag": "bdi",
+        "description": "Izolē tekstu, lai saglabātu pareizu virzienu bidirekcionālā kontekstā.",
+        "attributes": {}
+      },
+      {
+        "tag": "bdo",
+        "description": "Maina teksta virzienu (LTR vai RTL).",
+        "attributes": {
+          "dir": "Norāda teksta virzienu"
+        }
+      },
+      {
+        "tag": "blockquote",
+        "description": "Citāts no cita avota.",
+        "attributes": {
+          "cite": "Avota URL"
+        }
+      },
+      {
+        "tag": "body",
+        "description": "Dokumenta pamatdaļa (redzamais saturs).",
+        "attributes": {}
+      },
+      {
+        "tag": "br",
+        "description": "Līnijas pārtraukums (jauna rinda).",
+        "attributes": {}
+      },
+      {
+        "tag": "button",
+        "description": "Pogas elements, ko var nospiest.",
+        "attributes": {
+          "type": "Pogas tips (submit, button, reset)",
+          "disabled": "Padara pogu neaktīvu",
+          "name": "Nosaukums formas datiem"
+        }
+      },
+      {
+        "tag": "canvas",
+        "description": "Grafikas zīmēšana ar JavaScript palīdzību.",
+        "attributes": {
+          "width": "Kanvas platums",
+          "height": "Kanvas augstums"
+        }
+      },
+      {
+        "tag": "caption",
+        "description": "Tabulas virsraksts.",
+        "attributes": {}
+      },
+      {
+        "tag": "cite",
+        "description": "Avota nosaukums vai atsauce.",
+        "attributes": {}
+      },
+      {
+        "tag": "code",
+        "description": "Koda fragments.",
+        "attributes": {}
+      },
+      {
+        "tag": "col",
+        "description": "Kolonnas īpašības tabulā.",
+        "attributes": {
+          "span": "Cik kolonnas aizņem"
+        }
+      },
+      {
+        "tag": "colgroup",
+        "description": "Kolonnu grupēšana tabulā.",
+        "attributes": {
+          "span": "Kolonnu skaits"
+        }
+      },
+      {
+        "tag": "data",
+        "description": "Saistīts ar mašīnlasāmu vērtību.",
+        "attributes": {
+          "value": "Mašīnlasāmā vērtība"
+        }
+      },
+      {
+        "tag": "datalist",
+        "description": "Saraksts ar ieejas ieteikumiem.",
+        "attributes": {}
+      },
+      {
+        "tag": "dd",
+        "description": "Apraksta terminu definīciju sarakstā.",
+        "attributes": {}
+      },
+      {
+        "tag": "del",
+        "description": "Norāda dzēstu saturu.",
+        "attributes": {
+          "cite": "Dzēšanas avots",
+          "datetime": "Dzēšanas laiks"
+        }
+      },
+      {
+        "tag": "details",
+        "description": "Izplešams satura bloks.",
+        "attributes": {
+          "open": "Norāda, vai bloks ir atvērts pēc noklusējuma"
+        }
+      },
+      {
+        "tag": "dfn",
+        "description": "Definīcija terminam.",
+        "attributes": {
+          "title": "Definīcijas apraksts"
+        }
+      },
+      {
+        "tag": "dialog",
+        "description": "Dialoglodziņš vai modālais logs.",
+        "attributes": {
+          "open": "Dialoglodziņš ir atvērts"
+        }
+      },
+      {
+        "tag": "dl",
+        "description": "Definīciju saraksts.",
+        "attributes": {}
+      },
+      {
+        "tag": "dt",
+        "description": "Definējamais termins definīciju sarakstā.",
+        "attributes": {}
+      },
+      {
+        "tag": "em",
+        "description": "Uzsver tekstu (parasti slīpraksts).",
+        "attributes": {}
+      },
+      {
+        "tag": "embed",
+        "description": "Iegulst ārēju saturu (piemēram, multividi).",
+        "attributes": {
+          "src": "Multivides resurss",
+          "type": "Satura tips",
+          "width": "Platums",
+          "height": "Augstums"
+        }
+      }
+    ]
+  }
