@@ -8,7 +8,7 @@
          ieliktTabula(dati);
     })
     .catch((error)=>{
-        // alert(error);
+        alert(error);
     })
     .finally(()=>{
         console.log("Dati ielādēti");
@@ -17,11 +17,18 @@
 
     function ieliktTabula(dati){
         let table="";
+        table+=`
+             <tr style="font-weight:bold">
+                <td>HTML tegs</td> 
+                <td>Apraksts</td> 
+                <td>Tegu atribūti un to nozīme</td> 
+             </tr>
+        `;
 
         for(rinda of dati.tags){
             let attr = "";
             for(atributs in rinda.attributes){
-                attr += `${atributs} : ${rinda.attributes[atributs]}<br>` 
+                attr += `<b>${atributs}</b>: ${rinda.attributes[atributs]}<br>` 
             }
 
             table+=`
@@ -33,16 +40,7 @@
             `;
         }
 
-
-
-
-
         document.querySelector("table").innerHTML = table;
-        
-        
-
-
-        console.log(dati)
     }
 
 
