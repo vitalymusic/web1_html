@@ -40,7 +40,7 @@ let slideNumber = 0;
 let slidesDiv = document.querySelector('.slides');
 let leftbtn = document.querySelector('.slider_left_btn');
 let rightbtn = document.querySelector('.slider_right_btn');
-let time = 400;
+let time = 700;
 
 
 function showSlide(number){
@@ -61,6 +61,8 @@ leftbtn.onclick = (event)=>{
     event.preventDefault();
     slidesDiv.classList.remove('fade-in');
     slidesDiv.classList.add('fade-out');
+    // slidesDiv.classList.remove('bounce-in-right');
+    // slidesDiv.classList.add('bounce-out-left');
     
     setTimeout(()=>{
       slideNumber--;
@@ -69,6 +71,7 @@ leftbtn.onclick = (event)=>{
       }
       showSlide(slideNumber);
       slidesDiv.classList.replace('fade-out','fade-in');
+      // slidesDiv.classList.replace('bounce-out-left','bounce-in-right');
   },time);
     
 }
@@ -77,6 +80,8 @@ rightbtn.onclick = (event)=>{
     event.preventDefault();
     slidesDiv.classList.remove('fade-in');
     slidesDiv.classList.add('fade-out');
+    // slidesDiv.classList.remove('bounce-in-right');
+    // slidesDiv.classList.add('bounce-out-left');
 
   setTimeout(()=>{
     slideNumber++;
@@ -85,13 +90,14 @@ rightbtn.onclick = (event)=>{
     }
     showSlide(slideNumber);
     slidesDiv.classList.replace('fade-out','fade-in');
+    // slidesDiv.classList.replace('bounce-out-left','bounce-in-right');
   },time)
 
 }
 
-// setInterval(()=>{
-//     rightbtn.click();
-// },2000);
+setInterval(()=>{
+    rightbtn.click();
+},7000);
 
 
 
