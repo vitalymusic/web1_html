@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- POPUP css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css" integrity="sha512-lvaVbvmbHhG8cmfivxLRhemYlTT60Ly9Cc35USrpi8/m+Lf/f/T8x9kEIQq47cRj1VQIFuxTxxCcvqiQeQSHjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- POPUP css  -->
+
     
+
     <link rel="stylesheet" href="style.css">
     
 
@@ -37,6 +45,8 @@
 
 
     <main>
+        <a class="test-popup-link showContentBtn" href="https://www.youtube.com/watch?v=UU-GebNqdbg">Skatītites tālāk</a>
+
         <h1 class="slow-fly-in">Esi sveicināts!!!</h1>
         <button class="showContentBtn" data-id="html">Parādīt saturu par HTML</button>
         <section id="html"> 
@@ -44,7 +54,10 @@
             <p class="animate1">HTML (Hypertext Markup Language) ir marķēšanas valoda, kas tiek izmantota tīmekļa lapu struktūras
                 izveidei. Tā izmanto elementus un tagus, lai aprakstītu dažādas satura daļas, piemēram, virsrakstus,
                 rindkopas, attēlus un saites.</p>
-            <img src="https://placehold.co/600x400?text=HTML" alt="HTML attēls">
+            
+                <a href="./img/slide1.jpg" data-lightbox="image-1" data-title="Attēls 1">
+                    <img src="./img/slide1.jpg" alt="HTML attēls">
+                </a>
         </section>
         <button class="showContentBtn" data-id="css">Parādīt saturu par CSS</button>
         <section id="css">
@@ -143,8 +156,33 @@
     </dialog>
 
     <!-- Form dialog -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js" integrity="sha512-/IJVg2oav2TggiFftaMSPgttHNmgu/0RSGP64Nm7wqYwjkxj4hAHLRMJi3QNTa22f4pIkvTsCpB848HEilV6MA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Coockie law -->
+    <script type="text/javascript" id="cookiebanner"
+    src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
+    data-height="50px" data-position="bottom"
+    data-message="We use cookies to improve your browsing experience.">
+</script>
 
 
+    <!-- Popup -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js" integrity="sha512-fCRpXk4VumjVNtE0j+OyOqzPxF1eZwacU3kN3SsznRPWHgMTSSo7INc8aY03KQDBWztuMo5KjKzCFXI/a5rVYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(()=>{
+
+                $('.test-popup-link').magnificPopup({
+                    type: 'iframe',
+
+
+                    // other options
+                });
+
+        })
+
+       
+
+    </script>
 
     <script src="main.js"></script>
     <script src="carousel.js"></script>
