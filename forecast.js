@@ -13,7 +13,7 @@ let pilsetas = {
 }
 
 for( pilseta in pilsetas){
-    console.log(pilseta,pilsētas[pilseta]);
+    console.log(pilseta,pilsetas[pilseta]);
 }
 
 button.onclick = ()=>{
