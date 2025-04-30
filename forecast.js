@@ -1,12 +1,19 @@
-// Meteo API vaicajums
-let href = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=weather_code&hourly=temperature_2m&timezone=Europe%2FRiga&forecast_days=7";
+let input = +document.querySelector("input");
+let button = document.querySelector(".btn1");
 
+button.onclick = ()=>{
+    if(input.value > 0){
+        getWeather(days);
+    }
+ 
+}
 
 let div = document.querySelector(".forecast");
+async function getWeather(days){
+    let href = `https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=weather_code&hourly=temperature_2m&timezone=Europe%2FRiga&forecast_days=${days}`;
 
- getWeather();
 
-async function getWeather(){
+
     let atbilde = await fetch(href);
     let dati = await atbilde.json();
     await showTable(dati);
